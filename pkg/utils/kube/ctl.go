@@ -19,8 +19,8 @@ import (
 	"k8s.io/kube-openapi/pkg/util/proto"
 	"k8s.io/kubectl/pkg/util/openapi"
 
-	utils "github.com/argoproj/gitops-engine/pkg/utils/io"
-	"github.com/argoproj/gitops-engine/pkg/utils/tracing"
+	utils "github.com/tjto/gitops-engine/pkg/utils/io"
+	"github.com/tjto/gitops-engine/pkg/utils/tracing"
 )
 
 type CleanupFunc func()

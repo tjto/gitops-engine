@@ -3,7 +3,7 @@ package helm
 import (
 	"testing"
 
-	. "github.com/argoproj/gitops-engine/pkg/utils/testing"
+	. "github.com/tjto/gitops-engine/pkg/utils/testing"
 
 	"github.com/stretchr/testify/assert"
 )

@@ -5,7 +5,7 @@ import (
 	"crypto/sha256"
 	"encoding/base64"
 	"fmt"
-	"github.com/argoproj/gitops-engine/pkg/utils/text"
+	"github.com/tjto/gitops-engine/pkg/utils/text"
 	"net/http"
 	"os"
 	"os/exec"
@@ -21,10 +21,10 @@ import (
 	"k8s.io/client-go/tools/clientcmd"
 	"k8s.io/klog/v2/klogr"
 
-	"github.com/argoproj/gitops-engine/pkg/cache"
-	"github.com/argoproj/gitops-engine/pkg/engine"
-	"github.com/argoproj/gitops-engine/pkg/sync"
-	"github.com/argoproj/gitops-engine/pkg/utils/kube"
+	"github.com/tjto/gitops-engine/pkg/cache"
+	"github.com/tjto/gitops-engine/pkg/engine"
+	"github.com/tjto/gitops-engine/pkg/sync"
+	"github.com/tjto/gitops-engine/pkg/utils/kube"
 
 	_ "net/http/pprof"
 )

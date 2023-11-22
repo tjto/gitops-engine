@@ -24,12 +24,12 @@ import (
 	"sigs.k8s.io/structured-merge-diff/v4/merge"
 	"sigs.k8s.io/structured-merge-diff/v4/typed"
 
-	"github.com/argoproj/gitops-engine/internal/kubernetes_vendor/pkg/api/v1/endpoints"
-	"github.com/argoproj/gitops-engine/pkg/diff/internal/fieldmanager"
-	"github.com/argoproj/gitops-engine/pkg/sync/resource"
-	jsonutil "github.com/argoproj/gitops-engine/pkg/utils/json"
-	gescheme "github.com/argoproj/gitops-engine/pkg/utils/kube/scheme"
-	kubescheme "github.com/argoproj/gitops-engine/pkg/utils/kube/scheme"
+	"github.com/tjto/gitops-engine/internal/kubernetes_vendor/pkg/api/v1/endpoints"
+	"github.com/tjto/gitops-engine/pkg/diff/internal/fieldmanager"
+	"github.com/tjto/gitops-engine/pkg/sync/resource"
+	jsonutil "github.com/tjto/gitops-engine/pkg/utils/json"
+	gescheme "github.com/tjto/gitops-engine/pkg/utils/kube/scheme"
+	kubescheme "github.com/tjto/gitops-engine/pkg/utils/kube/scheme"
 )
 
 const (
