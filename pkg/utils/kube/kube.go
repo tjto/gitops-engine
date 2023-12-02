@@ -53,6 +53,10 @@ const (
 	APIServiceKind               = "APIService"
 	NamespaceKind                = "Namespace"
 	HorizontalPodAutoscalerKind  = "HorizontalPodAutoscaler"
+	CrossplaneProviderKind       = "Provider"
+	AlphasenseQueueKind          = "Queue"
+	AlphasenseSubscriptionKind   = "Subscription"
+	AlphasenseTopicKind          = "Topic"
 )
 
 type ResourceInfoProvider interface {
