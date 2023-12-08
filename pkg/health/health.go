@@ -150,12 +150,6 @@ func GetHealthCheckFunc(gvk schema.GroupVersionKind) func(obj *unstructured.Unst
 		case kube.HorizontalPodAutoscalerKind:
 			return getHPAHealth
 		}
-	case "pkg.crossplane.io":
-		switch gvk.Kind {
-		case kube.CrossplaneProviderKind:
-			return getCrossplaneProviderHealth
-		}
-
 	}
 
 	return nil
