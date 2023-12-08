@@ -17,10 +17,7 @@ func getCrossplaneProviderHealth(obj *unstructured.Unstructured) (*HealthStatus,
 	for _, condition := range status["conditions"].([]interface{}) {
 		c, ok := condition.(map[string]interface{})
 		if !ok {
-			return &HealthStatus{
-				Status:  HealthStatusUnknown,
-				Message: fmt.Sprintf("cannot get conditions of provider %s/%s", obj.GetKind(), obj.GetName()),
-			}, nil
+			continue
 		}
 		if c["type"] == "Healthy" && c["status"] == "True" && c["reason"] == "HealthyPackageRevision" {
 			return &HealthStatus{
